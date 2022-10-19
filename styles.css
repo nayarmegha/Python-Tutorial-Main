@@ -1,0 +1,57 @@
+html{
+  background-color: rgb(55, 55, 139);  
+}
+p1{
+  font-family:monospace;
+  color: rgb(203, 218, 232);
+  font-weight:bold;
+  font-size: 25px;
+  
+}
+
+p2 {
+  font-family:monospace;
+  color: rgb(38, 42, 46);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(37, 37, 39);
+  text-align: center;
+}
+body{
+  border: none;
+  padding: none;
+  margin-top: 330px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.btn-1 {
+  font-family: monospace;
+  background-color: rgb(255, 217, 0);
+  font-size: 25px;
+  border-radius: 8px;
+  border-color: rgb(255, 217, 0);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2px;
+  display:block;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.btn-2{
+font-family:monospace;
+background-color: rgb(255, 217, 0);
+font-size: 25px;
+border-radius: 8px;
+border-color:rgb(255, 217, 0);
+text-decoration: none;
+font-weight: bold;
+padding:  5px;
+margin-right: 50px;
+margin-bottom: 50px;
+}
