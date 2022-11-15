@@ -1,27 +1,31 @@
 //creating a class for snake head
 class Snake {
   
-    constructor(){
-      //the snake body is accounted for as an array, with its head being the first element
-      this.body =[];
-      //createing a 2D vector with origin at 0,0
-      this.body[0] = createVector(0,0);
-      this.xdir = 0;
-      this.ydir = 0;
+  constructor(){
+    //createing a 2D vector with origin at 0,0
+    this.snakePos = createVector(0,0);
+    this.xdir = 0;
+    this.ydir = 0;
+  }
+  
+  setDir(x,y){ //setter for x y values of snake direction
+    this.xdir = x;
+    this.ydir = y;
+  }
+  
+  update(){ //setter for x y coord pos of snake 
+    this.snakePos.x += this.xdir; //update x pos of snake based on x dir  
+    this.snakePos.y += this.ydir;
+  }
+  
+  show(){
+    fill("rgb(64,55,114)")
+    noStroke();
+    if (abs(xDir) == 1 && yDir == 0) { // Going left or right
+      rect(this.snakePos.x, this.snakePos.y, 1+turn, 1, 0.1)
     }
-    
-    setDir(x,y){
-      this.xdir = x;
-      this.ydir =y;
-    }
-    update(){
-      this.body[0].x += this.xdir;
-      this.body[0].y += this.ydir;
-    }
-    
-    show(){
-      fill("rgb(64,55,114)")
-      noStroke();
-      rect(this.body[0].x, this.body[0].y, 1, 1, 0.1)
+    else { // going up or down
+      rect(this.snakePos.x, this.snakePos.y, 1, 1+turn, 0.1)
     }
   }
+}
