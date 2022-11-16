@@ -103,11 +103,11 @@ function draw() {
   
   else if (turn == 3 && !youLose){
   fill("white")
-  text("YOU WON!!", 20, 7.1)
+  text("YOU WON!!", 25, 7.1)
   }
   
   if(youLose) {
     turn = 3
-    text("YOU LOSE!!", 16, 7.1)
+    text("YOU LOSE!!", 25, 7.1)
   }
 }
